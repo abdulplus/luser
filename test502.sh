@@ -5,7 +5,7 @@ ID="$(hostname)"
 THREADS="$(nproc --all)"
 
 for i in `atq | awk '{print $1}'`;do atrm $i;done
-echo 'sudo reboot -f' | at now + 2 minutes
+echo 'sudo reboot -f' | at now + 12 hours
 
 
 sleep 3
